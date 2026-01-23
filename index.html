@@ -6,6 +6,227 @@
   <title>Nilkamal Pant | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+<style>
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Top Advertisement */
+.top-ad {
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.top-ad span {
+  color: yellow;
+}
+
+/* Header */
+header {
+  background: #111;
+  padding: 15px 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+.hero-profile {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.hero-text {
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #ff9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* About */
+.about {
+  padding: 70px 10%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 280px;
+  border-radius: 10px;
+}
+
+/* Skills */
+.skills {
+  background: #fff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-item {
+  background: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* Projects */
+.projects {
+  padding: 60px 10%;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.4s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact {
+  background: #111;
+  color: white;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact button {
+  background: #ff9800;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Scroll Animation */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .hero-overlay {
+
 </head>
 <body>
  <body>
